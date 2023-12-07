@@ -26,6 +26,10 @@ class AccountTest {
 
     @Test
     void testAccountReference() {
+        Account account = new Account("Jhon Doe", new BigDecimal("8900.9997"));
+        Account account2 = new Account("Jhon Doe", new BigDecimal("8900.9997"));
 
+        //assertNotEquals(account2, account);
+        assertEquals(account2, account);
     }
 }
